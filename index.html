@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhushiBox — Thoughtful Gifts, Made Just for You</title>
+<meta name="description" content="KhushiBox creates customized gift hampers for every occasion — birthdays, weddings, Eid, anniversaries and more. Build your own hamper or shop ready-made.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <img src="assets/logo.png" alt="KhushiBox logo" class="brand-mark">
+      <span class="brand-name">KhushiBox</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#customize">Customize</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-primary btn-small">Order Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <p class="kicker">Gift hampers, made personal</p>
+        <h1>Thoughtful gifts, made just for you.</h1>
+        <p class="hero-sub">KhushiBox designs and hand-packs customized gift hampers for every special moment — from a quiet "just because" to your best friend's wedding day. Pick a ready-made favourite, or build one entirely your own.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Explore Hampers</a>
+          <a href="#customize" class="btn btn-outline">Build Your Own</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>500+</strong><span>Hampers packed</span></div>
+          <div><strong>11</strong><span>Occasions covered</span></div>
+          <div><strong>100%</strong><span>Customizable</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80" alt="A curated KhushiBox gift hamper with ribbon and dried flowers">
+          <div class="hero-tag">
+            <span class="hero-tag-heart">♥</span>
+            <span>Handwritten note<br>included</span>
+          </div>
+        </div>
+        <svg class="hero-ribbon" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOP BY OCCASION ===================== -->
+  <section class="occasions" id="occasions">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Shop by occasion</h2>
+        <p>Every occasion deserves its own kind of gift. Tap one to see hampers picked for it.</p>
+      </div>
+
+      <div class="occasion-grid reveal" id="occasionGrid">
+        <!-- occasion cards injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED HAMPERS ===================== -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Featured hampers</h2>
+        <p>A few of our most-loved, ready to send as they are — or make them yours.</p>
+      </div>
+
+      <div class="filter-note reveal" id="filterNote" hidden>
+        <span></span>
+        <button id="clearFilter">Show all hampers ✕</button>
+      </div>
+
+      <div class="product-grid reveal" id="productGrid">
+        <!-- product cards injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUILD YOUR OWN ===================== -->
+  <section class="builder" id="customize">
+    <div class="container builder-inner">
+      <div class="section-head light reveal">
+        <p class="kicker">The KhushiBox way</p>
+        <h2>Build your own hamper</h2>
+        <p>Four simple choices, one hamper that actually feels like it was made for the person receiving it.</p>
+      </div>
+
+      <div class="builder-steps reveal">
+        <div class="builder-step">
+          <span class="step-num">1</span>
+          <h3>Choose your budget</h3>
+          <p>Tell us roughly what you'd like to spend, and we'll work within it.</p>
+        </div>
+        <div class="builder-step">
+          <span class="step-num">2</span>
+          <h3>Choose your items</h3>
+          <p>Pick from chocolates, candles, skincare, tea, keepsakes and more.</p>
+        </div>
+        <div class="builder-step">
+          <span class="step-num">3</span>
+          <h3>Add a personal touch</h3>
+          <p>Write a note, name the occasion, add colours you love.</p>
+        </div>
+        <div class="builder-step">
+          <span class="step-num">4</span>
+          <h3>We create your hamper</h3>
+          <p>We pack, wrap and tag it by hand, ready to gift or ship.</p>
+        </div>
+      </div>
+
+      <div class="builder-tool reveal" id="builderTool">
+        <div class="builder-field">
+          <label>Budget range</label>
+          <div class="chip-group" id="budgetChips">
+            <button type="button" class="chip" data-budget="Rs. 2,500 – 4,000">Rs. 2,500 – 4,000</button>
+            <button type="button" class="chip" data-budget="Rs. 4,000 – 7,000">Rs. 4,000 – 7,000</button>
+            <button type="button" class="chip" data-budget="Rs. 7,000 – 10,000">Rs. 7,000 – 10,000</button>
+            <button type="button" class="chip" data-budget="Rs. 10,000+">Rs. 10,000+</button>
+          </div>
+        </div>
+
+        <div class="builder-field">
+          <label>Occasion</label>
+          <select id="builderOccasion">
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Wedding</option>
+            <option>Eid</option>
+            <option>Valentine's Day</option>
+            <option>Mother's Day</option>
+            <option>Father's Day</option>
+            <option>Baby Shower</option>
+            <option>Graduation</option>
+            <option>Corporate Gifts</option>
+            <option>Just Because</option>
+          </select>
+        </div>
+
+        <div class="builder-field">
+          <label>What should go inside? <span>(pick as many as you like)</span></label>
+          <div class="checkbox-grid" id="itemChecklist">
+            <label class="check-pill"><input type="checkbox" value="Chocolates"><span>Chocolates</span></label>
+            <label class="check-pill"><input type="checkbox" value="Scented candle"><span>Scented candle</span></label>
+            <label class="check-pill"><input type="checkbox" value="Tea or coffee"><span>Tea or coffee</span></label>
+            <label class="check-pill"><input type="checkbox" value="Skincare set"><span>Skincare set</span></label>
+            <label class="check-pill"><input type="checkbox" value="Perfume sample"><span>Perfume sample</span></label>
+            <label class="check-pill"><input type="checkbox" value="Fresh or dried flowers"><span>Flowers</span></label>
+            <label class="check-pill"><input type="checkbox" value="Personalised mug"><span>Personalised mug</span></label>
+            <label class="check-pill"><input type="checkbox" value="Soft toy"><span>Soft toy</span></label>
+            <label class="check-pill"><input type="checkbox" value="Handwritten card"><span>Handwritten card</span></label>
+          </div>
+        </div>
+
+        <div class="builder-field">
+          <label for="personalNote">Your personal message <span>(optional)</span></label>
+          <textarea id="personalNote" rows="3" placeholder="e.g. Happy anniversary to the best partner ever — here's to many more."></textarea>
+        </div>
+
+        <button class="btn btn-primary btn-wide" id="createHamperBtn">Create My Hamper</button>
+        <p class="builder-hint">This opens WhatsApp with your choices filled in — we'll confirm pricing and details with you there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how" >
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>How it works</h2>
+      </div>
+      <div class="how-grid reveal">
+        <div class="how-step">
+          <span class="step-num outline">1</span>
+          <h3>Choose an occasion</h3>
+          <p>Browse hampers by the moment you're celebrating.</p>
+        </div>
+        <div class="how-step">
+          <span class="step-num outline">2</span>
+          <h3>Select your gifts</h3>
+          <p>Go ready-made, or start building from scratch.</p>
+        </div>
+        <div class="how-step">
+          <span class="step-num outline">3</span>
+          <h3>Customize your hamper</h3>
+          <p>Add a note, adjust items, pick your colours.</p>
+        </div>
+        <div class="how-step">
+          <span class="step-num outline">4</span>
+          <h3>Place your order</h3>
+          <p>Confirm on WhatsApp — we'll pack and deliver it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY KHUSHIBOX ===================== -->
+  <section class="why" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Why KhushiBox</h2>
+        <p>We're a small team that treats every hamper like it's going to someone we love — because usually, it is.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><path d="M24 8c-9 0-16 7-16 15 0 10 9 15 16 20 7-5 16-10 16-20 0-8-7-15-16-15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Fully customizable</h3>
+          <p>Every hamper can be rebuilt around your budget, taste and the person it's for.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><rect x="9" y="16" width="30" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 16l15-8 15 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Beautiful packaging</h3>
+          <p>Hand-wrapped, ribboned and tagged — it looks as good as what's inside.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><path d="M24 40s-16-9-16-20a10 10 0 0119-4 10 10 0 0119 4c0 11-16 20-16 20a1 1 0 01-6 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Made with love</h3>
+          <p>Each order is packed by hand, one hamper at a time — never assembly-line gifting.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><path d="M8 34V14a2 2 0 012-2h22v22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32 20h6l4 6v8h-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="15" cy="36" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="33" cy="36" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Delivery available</h3>
+          <p>We deliver across the city, and can ship further with a little notice.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><path d="M14 22V12a4 4 0 018 0v10M22 22V10a4 4 0 018 0v12M30 22v-6a4 4 0 018 0v14c0 8-6 14-14 14s-14-6-14-14v-6a4 4 0 018 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Personal messages</h3>
+          <p>Add a handwritten card with your own words, no extra charge.</p>
+        </div>
+        <div class="why-card">
+          <svg viewBox="0 0 48 48" class="why-icon"><path d="M12 12h24v6H12zM15 18v18h18V18M20 24v8M28 24v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Gifts for every occasion</h3>
+          <p>From Eid to graduation day — if it's worth celebrating, we have a hamper for it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>What our customers say</h2>
+      </div>
+      <div class="review-grid reveal">
+        <blockquote class="review-card">
+          <p>"I ordered a Mehndi hamper for my cousin and it looked even better in person than the photos. The bangles and mithai box were such a nice touch."</p>
+          <cite>— Sana R., Lahore</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <p>"The build-your-own tool made it so easy to stay within budget for my dad's birthday. They confirmed everything on WhatsApp within minutes."</p>
+          <cite>— Ahmed K., Karachi</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <p>"Sent an anniversary hamper to my sister and she cried reading the note. Packaging was gorgeous, delivery was on time. Will order again."</p>
+          <cite>— Mahnoor I., Islamabad</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section class="social">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>From our Instagram</h2>
+        <p>@khushibox.pk</p>
+      </div>
+      <div class="social-grid reveal">
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=500&q=70" alt="Gift hamper flatlay"><span>♡</span></a>
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=500&q=70" alt="Wrapped gift box with ribbon"><span>♡</span></a>
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=70" alt="Hamper with flowers and candles"><span>♡</span></a>
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?auto=format&fit=crop&w=500&q=70" alt="Chocolate gift box"><span>♡</span></a>
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1544998146-e7b7cd946a0a?auto=format&fit=crop&w=500&q=70" alt="Eid gift hamper"><span>♡</span></a>
+        <a class="social-tile" href="#" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?auto=format&fit=crop&w=500&q=70" alt="Wedding gift basket"><span>♡</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="section-head light reveal">
+        <p class="kicker">Let's put together your hamper</p>
+        <h2>Order or ask us anything</h2>
+        <p>The fastest way to reach us is WhatsApp — send your occasion, budget and city, and we'll take it from there.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <a href="https://wa.me/923001234567?text=Hi%20KhushiBox!%20I'd%20like%20to%20order%20a%20gift%20hamper." target="_blank" rel="noopener" class="contact-card whatsapp">
+          <svg viewBox="0 0 32 32" class="contact-icon"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.903 6.472L4 29l7.72-1.867A11.94 11.94 0 0016.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.6a9.55 9.55 0 01-4.87-1.33l-.35-.207-4.583 1.108 1.127-4.47-.228-.362A9.56 9.56 0 016.4 15c0-5.302 4.3-9.6 9.6-9.6 5.302 0 9.6 4.298 9.6 9.6 0 5.302-4.298 9.6-9.6 9.6zm5.253-7.19c-.288-.144-1.703-.84-1.967-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-.288-.144-1.215-.448-2.314-1.428-.856-.763-1.434-1.705-1.602-1.993-.168-.288-.018-.443.126-.587.13-.129.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.562-.888-2.14-.234-.562-.472-.486-.648-.495-.168-.008-.36-.01-.552-.01a1.06 1.06 0 00-.768.36c-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.03 3.1 4.92 4.347.687.297 1.222.474 1.64.606.689.219 1.316.188 1.812.114.553-.082 1.703-.696 1.943-1.369.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.552-.336z"/></svg>
+          <div>
+            <h3>Chat on WhatsApp</h3>
+            <p>+92 300 1234567 <em>(sample — update with your number)</em></p>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/khushibox.pk" target="_blank" rel="noopener" class="contact-card instagram">
+          <svg viewBox="0 0 32 32" class="contact-icon"><path fill="currentColor" d="M16 3c-3.53 0-3.97.015-5.36.078-1.38.064-2.33.283-3.15.605a6.36 6.36 0 00-2.3 1.498A6.36 6.36 0 003.68 7.49c-.322.82-.54 1.77-.605 3.15C3.015 12.03 3 12.47 3 16s.015 3.97.078 5.36c.064 1.38.283 2.33.605 3.15.334.858.78 1.586 1.498 2.3a6.36 6.36 0 002.3 1.498c.82.322 1.77.54 3.15.605C12.03 28.985 12.47 29 16 29s3.97-.015 5.36-.078c1.38-.064 2.33-.283 3.15-.605a6.36 6.36 0 002.3-1.498 6.36 6.36 0 001.498-2.3c.322-.82.54-1.77.605-3.15.063-1.39.078-1.83.078-5.36s-.015-3.97-.078-5.36c-.064-1.38-.283-2.33-.605-3.15a6.36 6.36 0 00-1.498-2.3A6.36 6.36 0 0024.51 3.68c-.82-.322-1.77-.54-3.15-.605C19.97 3.015 19.53 3 16 3zm0 2.16c3.47 0 3.88.014 5.25.076 1.27.058 1.96.27 2.42.45.61.237 1.04.52 1.5.98.46.46.743.89.98 1.5.18.46.392 1.15.45 2.42.062 1.37.076 1.78.076 5.25s-.014 3.88-.076 5.25c-.058 1.27-.27 1.96-.45 2.42a4.2 4.2 0 01-.98 1.5c-.46.46-.89.743-1.5.98-.46.18-1.15.392-2.42.45-1.37.062-1.78.076-5.25.076s-3.88-.014-5.25-.076c-1.27-.058-1.96-.27-2.42-.45a4.2 4.2 0 01-1.5-.98 4.2 4.2 0 01-.98-1.5c-.18-.46-.392-1.15-.45-2.42-.062-1.37-.076-1.78-.076-5.25s.014-3.88.076-5.25c.058-1.27.27-1.96.45-2.42.237-.61.52-1.04.98-1.5.46-.46.89-.743 1.5-.98.46-.18 1.15-.392 2.42-.45 1.37-.062 1.78-.076 5.25-.076zM16 9.622A6.378 6.378 0 1016 22.378 6.378 6.378 0 0016 9.622zm0 10.52a4.142 4.142 0 110-8.284 4.142 4.142 0 010 8.284zm8.12-10.77a1.49 1.49 0 11-2.98 0 1.49 1.49 0 012.98 0z"/></svg>
+          <div>
+            <h3>Follow on Instagram</h3>
+            <p>@khushibox.pk <em>(sample — update with your handle)</em></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-details reveal">
+        <div><strong>Email</strong><span>hello@khushibox.pk <em>(placeholder)</em></span></div>
+        <div><strong>Location</strong><span>Lahore, Pakistan <em>(placeholder)</em></span></div>
+        <div><strong>Hours</strong><span>Mon – Sat, 11am – 8pm</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="KhushiBox logo">
+      <div>
+        <span class="brand-name">KhushiBox</span>
+        <p>Thoughtful gifts, made just for you.</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#customize">Customize</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://wa.me/923001234567" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+      <a href="https://instagram.com/khushibox.pk" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="mailto:hello@khushibox.pk" aria-label="Email">Email</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> KhushiBox. Every gift, wrapped with care.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
