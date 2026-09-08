@@ -4,7 +4,7 @@
    (country code, no + or spaces, e.g. 923001234567)
    ========================================================= */
 
-const WHATSAPP_NUMBER = "923001234567"; // <-- REPLACE with your WhatsApp number
+const WHATSAPP_NUMBER = "93424911286"; // <-- REPLACE with your WhatsApp number
 
 /* ---------- Occasion data ---------- */
 const occasions = [
